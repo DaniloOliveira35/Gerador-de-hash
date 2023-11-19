@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRrE9jr1NqgkfdmO/A7XsPP2WrLbVRSnPnp06jpj" crossorigin="anonymous">
+  <title>Gerador de Hash | DS </title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="box">
+      <form action="">
+        <fieldset>
+
+          <h3>Formulário de Hash</h3>
+
+          <div class="cartao">
+
+            <div class="minhas-informacoes">
+              <img src="./img/Logo.png" alt="foto de perfil">
+            </div>
+
+            <label for="inputText" class="labelInput">Digita sua Senha :</label>
+            <input type="password" id="inputText" placeholder="senha com no minimo 8 caracteres">
+
+            <label for="hashType">Escolha o tipo de hash:</label>
+
+            <select id="hashType">
+              <option value="">Escolha apenas um.</option>
+              <option value="md5"> 1-MD5</option>
+              <option value="sha1">2-SHA/1</option>
+              <option value="sha256">3-SHA/256</option>
+              <option value="sha512">4-SHA/512</option>
+            </select>
+
+
+            <button type="button" onclick="generateHash()">Gerar Hash</button>
+
+            <div id="hashResult"></div>
+
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+
+
+
+  <footer>
+    <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Danilo Oliveira</p>
+    
+  </footer>
+
+
+</body>
+
+
+
+
+</html>
